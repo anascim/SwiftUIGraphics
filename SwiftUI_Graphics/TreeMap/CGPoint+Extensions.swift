@@ -20,7 +20,11 @@ extension CGPoint: VectorArithmetic {
         self.x = newX
         self.y = newY
     }
-
+    
+    func findPointIn(radius: Double, radians: Double) -> CGPoint{
+        return self + CGPoint(x: radius * cos(radians), y: radius * sin(radians))
+    }
+    
     public var magnitudeSquared: Double {
         (Double(self.x * self.x) + Double(self.y * self.y))
     }

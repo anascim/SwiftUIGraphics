@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// Creates an object that will be used on the Sunburst Chart.
 ///
@@ -14,11 +15,11 @@ import Foundation
 ///
 ///     let root = SBData<Double>(name: "root", value: 100)
 ///
-class SBData<T: Numeric>: Equatable {
+class SBData<T: Numeric & BinaryInteger>: Equatable {
     let id = UUID().uuidString
     var name: String
     private(set) weak var parent: SBData?
-    private(set) var children: [SBData?] = []
+    private(set) var children: [SBData] = []
     private var value: T
 
     init(name: String = "", value: T = 0) {
@@ -37,6 +38,24 @@ class SBData<T: Numeric>: Equatable {
     /// - Parameter value: The value that will be shown on the Sunburst Chart.
     func setValue(_ value: T) {
         self.value = value
+    }
+    
+    func getPctForValue() -> CGFloat {
+        if let parent = self.parent {
+            return CGFloat(self.getValue())/CGFloat(parent.getValue())
+        }
+        return 1.0
+    }
+    
+    func getPercentages(for child: SBData<T>) -> (CGFloat, CGFloat) {
+        if !children.contains(child) { return (-1,1) }
+        var sum: CGFloat = 0.0
+        for c in children {
+            let temp = sum
+            sum += c.getPctForValue()
+            if c == child { return (temp, sum)}
+        }
+        return (-1,-1)
     }
 
 
@@ -59,7 +78,7 @@ class SBData<T: Numeric>: Equatable {
         if children.isEmpty {
             return value
         }
-        return children.map({ ($0?.getValue() ?? T.zero) }).reduce(T.zero, +)
+        return children.map({ $0.getValue() }).reduce(T.zero, +)
     }
 
 
@@ -90,8 +109,8 @@ class SBData<T: Numeric>: Equatable {
     ///
     /// - Parameter child: A SBData that will be added as a child of the object.
     func addChildren(_ children: [SBData]) {
-        children.forEach {
-            self.addChild($0)
+        for c in children {
+            self.addChild(c)
         }
     }
 
@@ -124,9 +143,9 @@ class SBData<T: Numeric>: Equatable {
     ///
     /// - Parameter child: The index of the child to be removed from the object.
     func removeChild(at index: Int) {
-        if let child = children.remove(at: index) {
-            child.parent = nil
-        }
+        if index >= children.count || index < 0 { return }
+        let child = children.remove(at: index)
+        child.parent = nil
     }
 
 

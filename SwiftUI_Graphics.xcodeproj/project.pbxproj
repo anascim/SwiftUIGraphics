@@ -15,12 +15,13 @@
 		25895DBE249172D3006C41A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25895DBD249172D3006C41A5 /* Assets.xcassets */; };
 		25895DC1249172D3006C41A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25895DC0249172D3006C41A5 /* Preview Assets.xcassets */; };
 		25895DC4249172D3006C41A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25895DC2249172D3006C41A5 /* LaunchScreen.storyboard */; };
-		8262239424940A6D009DEDAB /* SBDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262238C24940A6C009DEDAB /* SBDataManager.swift */; };
-		8262239524940A6D009DEDAB /* SBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262238D24940A6C009DEDAB /* SBData.swift */; };
 		8262239624940A6D009DEDAB /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262238F24940A6C009DEDAB /* WordModel.swift */; };
 		8262239A24940A6D009DEDAB /* TextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262239324940A6C009DEDAB /* TextParser.swift */; };
 		8262239E24940BD2009DEDAB /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262239D24940BD2009DEDAB /* WordView.swift */; };
 		826223A024940C05009DEDAB /* WordCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262239F24940C05009DEDAB /* WordCloud.swift */; };
+		8C538F6D2494306C008DCE71 /* SBDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C538F6A2494306C008DCE71 /* SBDataManager.swift */; };
+		8C538F6E2494306C008DCE71 /* SBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C538F6B2494306C008DCE71 /* SBData.swift */; };
+		8C538F6F2494306C008DCE71 /* SBDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C538F6C2494306C008DCE71 /* SBDrawing.swift */; };
 		A4540CDC2492A57C00082584 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4540CDB2492A57C00082584 /* Tree.swift */; };
 		A4540CDE2492A5BC00082584 /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4540CDD2492A5BC00082584 /* Diagram.swift */; };
 		A4540CE02492A5E700082584 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4540CDF2492A5E700082584 /* CGPoint+Extensions.swift */; };
@@ -48,12 +49,13 @@
 		25895DC0249172D3006C41A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25895DC3249172D3006C41A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25895DC5249172D3006C41A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8262238C24940A6C009DEDAB /* SBDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBDataManager.swift; sourceTree = "<group>"; };
-		8262238D24940A6C009DEDAB /* SBData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBData.swift; sourceTree = "<group>"; };
 		8262238F24940A6C009DEDAB /* WordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		8262239324940A6C009DEDAB /* TextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextParser.swift; sourceTree = "<group>"; };
 		8262239D24940BD2009DEDAB /* WordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		8262239F24940C05009DEDAB /* WordCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCloud.swift; sourceTree = "<group>"; };
+		8C538F6A2494306C008DCE71 /* SBDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBDataManager.swift; sourceTree = "<group>"; };
+		8C538F6B2494306C008DCE71 /* SBData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBData.swift; sourceTree = "<group>"; };
+		8C538F6C2494306C008DCE71 /* SBDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBDrawing.swift; sourceTree = "<group>"; };
 		A4540CDB2492A57C00082584 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tree.swift; path = SwiftUI_Graphics/TreeMap/Tree.swift; sourceTree = SOURCE_ROOT; };
 		A4540CDD2492A5BC00082584 /* Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Diagram.swift; path = SwiftUI_Graphics/TreeMap/Diagram.swift; sourceTree = SOURCE_ROOT; };
 		A4540CDF2492A5E700082584 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "SwiftUI_Graphics/TreeMap/CGPoint+Extensions.swift"; sourceTree = SOURCE_ROOT; };
@@ -138,18 +140,10 @@
 		8262238A24940A6C009DEDAB /* Sunburst */ = {
 			isa = PBXGroup;
 			children = (
-				8262238B24940A6C009DEDAB /* Model */,
+				8C538F692494306C008DCE71 /* Model */,
+				8C538F6C2494306C008DCE71 /* SBDrawing.swift */,
 			);
 			path = Sunburst;
-			sourceTree = "<group>";
-		};
-		8262238B24940A6C009DEDAB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8262238C24940A6C009DEDAB /* SBDataManager.swift */,
-				8262238D24940A6C009DEDAB /* SBData.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8262238E24940A6C009DEDAB /* WorldCloud */ = {
@@ -161,6 +155,15 @@
 				8262239324940A6C009DEDAB /* TextParser.swift */,
 			);
 			path = WorldCloud;
+			sourceTree = "<group>";
+		};
+		8C538F692494306C008DCE71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C538F6A2494306C008DCE71 /* SBDataManager.swift */,
+				8C538F6B2494306C008DCE71 /* SBData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A4DC52C824940A0F00365C3F /* TreeMap */ = {
@@ -291,20 +294,21 @@
 				25895DB8249172D1006C41A5 /* AppDelegate.swift in Sources */,
 				E0EED6792494159000ABE432 /* HeatmapViewModel.swift in Sources */,
 				A4540CDC2492A57C00082584 /* Tree.swift in Sources */,
+				8C538F6F2494306C008DCE71 /* SBDrawing.swift in Sources */,
 				25895DBA249172D1006C41A5 /* SceneDelegate.swift in Sources */,
+				8C538F6D2494306C008DCE71 /* SBDataManager.swift in Sources */,
 				A4540CEA2492A8B700082584 /* TreeMap.swift in Sources */,
 				A4540CDE2492A5BC00082584 /* Diagram.swift in Sources */,
 				E0EED67B2494159900ABE432 /* Heatmap.swift in Sources */,
 				A4540CE02492A5E700082584 /* CGPoint+Extensions.swift in Sources */,
 				F282F33824941B2F0095F3C2 /* ScatterPlotView.swift in Sources */,
+				8C538F6E2494306C008DCE71 /* SBData.swift in Sources */,
 				A4540CE22492A60300082584 /* Line.swift in Sources */,
 				A4540CE82492A68D00082584 /* NodeStyle.swift in Sources */,
 				A4540CE42492A64B00082584 /* Unique.swift in Sources */,
-				8262239424940A6D009DEDAB /* SBDataManager.swift in Sources */,
 				25895DBC249172D1006C41A5 /* ContentView.swift in Sources */,
 				A7FD7F892492A53F00C26668 /* GraphView.swift in Sources */,
 				8262239E24940BD2009DEDAB /* WordView.swift in Sources */,
-				8262239524940A6D009DEDAB /* SBData.swift in Sources */,
 				826223A024940C05009DEDAB /* WordCloud.swift in Sources */,
 				1EE7EA3C2493EC5C009432F2 /* Helpers.swift in Sources */,
 				F282F33724941B2F0095F3C2 /* ScatterPlotViewModel.swift in Sources */,

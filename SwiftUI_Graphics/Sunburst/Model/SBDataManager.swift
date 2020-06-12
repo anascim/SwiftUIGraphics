@@ -15,7 +15,7 @@ import Foundation
 ///     let root = SBData<Double>(name: "root", value: 100)
 ///     let manager = SBDataManager<Double>(root: root)
 ///
-class SBDataManager<T: Numeric> {
+class SBDataManager<T: Numeric & BinaryInteger> {
     private(set) var currentRoot: SBData<T>
     private(set) var visibleLevels: Int
 
